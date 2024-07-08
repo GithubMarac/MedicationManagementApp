@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MedicationService {
-  private apiUrl = 'http://localhost:5000/api/medications';
+  private apiUrl = 'http://localhost:5001/api/medications';
 
   constructor(private http: HttpClient) {}
 
@@ -15,6 +15,7 @@ export class MedicationService {
   }
 
   addMedication(medication: any): Observable<any> {
+    
     return this.http.post<any>(this.apiUrl, medication);
   }
 

@@ -8,7 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./medication-form.component.css']
 })
 export class MedicationFormComponent {
-  @Input() medication: any = { id: null, name: '', description: '', dosage: '', imageUrl: '' };
+  @Input() medication: any = { Name: '', Description: '', Dosage: '', ImageUrl: '' };
 
   constructor(private medicationService: MedicationService) {}
 
