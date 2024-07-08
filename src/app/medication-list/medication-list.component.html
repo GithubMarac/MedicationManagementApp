@@ -1,0 +1,25 @@
+<div class="medication-list">
+    <h2>Popis lijekova</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ime</th>
+          <th>Opis</th>
+          <th>Doziranje</th>
+          <th>Akcije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let medication of medications">
+          <td>{{ medication.name }}</td>
+          <td>{{ medication.description }}</td>
+          <td>{{ medication.dosage }}</td>
+          <td>
+            <button (click)="editMedication(medication)">Uredi</button>
+            <button (click)="deleteMedication(medication.id)">Izbriši</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

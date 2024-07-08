@@ -1,0 +1,18 @@
+nav {
+    background-color: #007bff;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+  }
+  
+  .content {
+    margin: 20px;
+  }
